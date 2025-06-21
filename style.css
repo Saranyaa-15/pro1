@@ -1,0 +1,364 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'italic';
+    transform: skewX()
+}
+
+body {
+    color: #fff;
+    background: #fff5cc;
+    line-height: 1.6;
+     font-family: 'italic';
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #5e463e;
+    color: #fff5cc;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #fff5cc;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #fff5cc;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    transition: color 0.5s ease, border-bottom 0.5s ease;
+    border-bottom: 2px solid transparent;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('coffee-bg.jpg') no-repeat center center/cover;
+    color: #fff5cc;
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff5cc;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #fff5cc;
+}
+
+.hero .btn {
+    display: inline-block;
+    background: #5e463e;
+    color: #fff5cc;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+}
+
+.hero .btn:hover {
+    background: #fff5cc;
+    color: #5e463e;
+}
+
+/* Product Section */
+.products {
+    padding: 2rem 0;
+    background: #fff5cc;
+    color: #5e463e;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #5e463e;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product {
+    background: #fff;
+    color: #5e463e;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgb(0 0 0 / 0.5);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    text-align: center;
+    width: 250px;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.7);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.product h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.product p {
+    margin-bottom: 1rem;
+    color: #5e463e;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.product .btn {
+    background: #5e463e;
+    color: #fff5cc;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+}
+
+.product .btn:hover {
+    background: #fff5cc;
+    color: #5e463e;
+    border: 1px solid #5e463e;
+}
+
+/* About Section */
+.about {
+    padding: 2rem 0;
+    background: #fff5cc;
+    color: #5e463e;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #5e463e;
+}
+
+.about p {
+    margin: 0 auto 1rem;
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #5e463e;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+    background: #fff5cc;
+    color: #5e463e;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #5e463e;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgb(0 0 0 / 0.5);
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #5e463e;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #5e463e;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #5e463e;
+    background: #fff5cc;
+}
+
+.contact button {
+    background: #5e463e;
+    color: #fff5cc;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #fff5cc;
+    color: #5e463e;
+    border: 1px solid #5e463e;
+}
+
+/* Footer */
+footer {
+    background: #5e463e;
+    color: #fff5cc;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+/* Cart Styles */
+#cart {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    background: #fff5cc;
+    color: #5e463e;
+    border: 1px solid #5e463e;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgb(0 0 0 / 0.5);
+    padding: 20px;
+    z-index: 1000;
+    font-family:'Poppins', sans-serif;
+}
+
+#cart ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#cart ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff5cc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart ul li span {
+    font-weight: bold;
+}
+
+#cart p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .products .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*Newly added*/
+@media (max-width: 767px) {
+  .header {
+    font-size: 2.5rem;
+    transform: skewX(-5deg);
+  }
+
+  .paragraph {
+    font-size: 1rem;
+    transform: skewX(-2deg);
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    font-size: 3rem;
+    transform: skewX(-7deg);
+  }
+
+  .paragraph {
+    font-size: 1.1rem;
+    transform: skewX(-4deg);
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    font-size: 4rem;
+    transform: skewX(-10deg);
+  }
+
+  .paragraph {
+    font-size: 1.2rem;
+    transform: skewX(-5deg);
+    padding: 20px;
+  }
+}
+
