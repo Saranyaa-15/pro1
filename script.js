@@ -2,15 +2,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     const darkBtn = document.getElementById("darkModeToggle");
 
-    darkBtn.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
+    if (darkBtn) {
+        darkBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
 
-        if (document.body.classList.contains("dark-mode")) {
-            darkBtn.textContent = "Disable Dark Mode";
-        } else {
-            darkBtn.textContent = "Enable Dark Mode";
-        }
-    });
+            // Change button label
+            darkBtn.textContent = document.body.classList.contains("dark-mode")
+                ? "☀️ Light Mode"
+                : "🌙 Dark Mode";
+        });
+    }
 
 
     // Cart functionality

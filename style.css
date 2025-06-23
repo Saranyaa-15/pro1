@@ -11,7 +11,7 @@ body {
     color: #fff;
     background: #fff5cc;
     line-height: 1.6;
-     font-family: 'italic';
+    font-family: 'italic';
 }
 
 /* Container */
@@ -30,6 +30,7 @@ header {
 
 header h1 {
     text-align: center;
+    margin-top: 30px;
     margin-bottom: 1rem;
     font-size: 2.5rem;
     letter-spacing: 1px;
@@ -70,13 +71,13 @@ header nav ul li a:hover {
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #fff5cc;
+    color:#5e463e;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    color: #fff5cc;
+    color: #5e463e;
 }
 
 .hero .btn {
@@ -265,7 +266,7 @@ footer {
 /* Cart Styles */
 #cart {
     position: fixed;
-    top: 10px;
+    top: 250px;
     right: 10px;
     width: 300px;
     background: #fff5cc;
@@ -361,4 +362,59 @@ footer {
     padding: 20px;
   }
 }
+/* Dark Mode Toggle Button */
+.dark-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px; 
+    background: transparent;
+    color: #fff5cc;
+    border: 2px solid #fff5cc;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1001; 
+    transition: all 0.3s ease;
+}
+
+
+.dark-toggle:hover {
+    background-color: #fff5cc;
+    color: #5e463e;
+}
+/* Dark Mode Theme */
+body.dark-mode {
+    background: #1c1c1c;
+    color: #eee;
+}
+
+body.dark-mode header,
+body.dark-mode .product,
+body.dark-mode .contact form,
+body.dark-mode footer,
+body.dark-mode #cart {
+    background: #2c2c2c;
+    color: #eee;
+    border-color: #eee;
+}
+
+body.dark-mode .dark-toggle {
+    border-color: #eee;
+    color: #eee;
+}
+
+body.dark-mode .dark-toggle:hover {
+    background: #eee;
+    color: #2c2c2c;
+}
+body.dark-mode #cart ul li {
+  color: #eee;
+  background-color: #3a3a3a;
+}
+
+body.dark-mode #cart ul li span {
+  color: #fca311;
+}
+
 
